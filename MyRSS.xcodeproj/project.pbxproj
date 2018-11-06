@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7057AC4E21912179002FAB4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC4D21912179002FAB4B /* AppDelegate.m */; };
+		7057AC5121912179002FAB4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC5021912179002FAB4B /* ViewController.m */; };
+		7057AC5421912179002FAB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC5221912179002FAB4B /* Main.storyboard */; };
+		7057AC562191217B002FAB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC552191217B002FAB4B /* Assets.xcassets */; };
+		7057AC592191217B002FAB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC572191217B002FAB4B /* LaunchScreen.storyboard */; };
+		7057AC5C2191217B002FAB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC5B2191217B002FAB4B /* main.m */; };
+		7057AC662191217B002FAB4B /* MyRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC652191217B002FAB4B /* MyRSSTests.m */; };
+		7057AC73219123C9002FAB4B /* RSS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC72219123C9002FAB4B /* RSS.m */; };
+		7057AC76219123D6002FAB4B /* RSSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC75219123D6002FAB4B /* RSSModel.m */; };
+		7057AC8521912527002FAB4B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC7C21912527002FAB4B /* AFURLResponseSerialization.m */; };
+		7057AC8621912527002FAB4B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC7D21912527002FAB4B /* AFHTTPSessionManager.m */; };
+		7057AC8721912527002FAB4B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC7F21912527002FAB4B /* AFURLSessionManager.m */; };
+		7057AC8821912527002FAB4B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC8021912527002FAB4B /* AFURLRequestSerialization.m */; };
+		7057AC8921912527002FAB4B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC8221912527002FAB4B /* AFNetworkReachabilityManager.m */; };
+		7057AC8A21912527002FAB4B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC8321912527002FAB4B /* AFSecurityPolicy.m */; };
+		7057AC8D21912CEF002FAB4B /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC8C21912CEF002FAB4B /* NSString+Tools.m */; };
+		7057AC9B21912DE1002FAB4B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC9021912DE1002FAB4B /* FMDatabaseQueue.m */; };
+		7057AC9C21912DE1002FAB4B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC9321912DE1002FAB4B /* FMDatabaseAdditions.m */; };
+		7057AC9D21912DE1002FAB4B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC9421912DE1002FAB4B /* FMDatabase.m */; };
+		7057AC9E21912DE1002FAB4B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC9821912DE1002FAB4B /* FMDatabasePool.m */; };
+		7057AC9F21912DE1002FAB4B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057AC9921912DE1002FAB4B /* FMResultSet.m */; };
+		7057ACA321912E50002FAB4B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057ACA221912E50002FAB4B /* libsqlite3.tbd */; };
+		7057ACA62191303E002FAB4B /* RSSDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACA52191303E002FAB4B /* RSSDao.m */; };
+		7057ACAA21914116002FAB4B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACA821914116002FAB4B /* GDataXMLNode.m */; };
+		7057ACAD219152D3002FAB4B /* RSSDetailListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACAC219152D3002FAB4B /* RSSDetailListController.m */; };
+		7057ACAF21915F81002FAB4B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC5A2191217B002FAB4B /* Info.plist */; };
+		7057ACB2219167FD002FAB4B /* RSSDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACB1219167FD002FAB4B /* RSSDetailController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7057AC622191217B002FAB4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7057AC4121912179002FAB4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7057AC4821912179002FAB4B;
+			remoteInfo = MyRSS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7057AC4921912179002FAB4B /* MyRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7057AC4C21912179002FAB4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7057AC4D21912179002FAB4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7057AC4F21912179002FAB4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7057AC5021912179002FAB4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7057AC5321912179002FAB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7057AC552191217B002FAB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7057AC582191217B002FAB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7057AC5A2191217B002FAB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7057AC5B2191217B002FAB4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7057AC612191217B002FAB4B /* MyRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyRSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7057AC652191217B002FAB4B /* MyRSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRSSTests.m; sourceTree = "<group>"; };
+		7057AC672191217B002FAB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7057AC71219123C9002FAB4B /* RSS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSS.h; sourceTree = "<group>"; };
+		7057AC72219123C9002FAB4B /* RSS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS.m; sourceTree = "<group>"; };
+		7057AC74219123D6002FAB4B /* RSSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSModel.h; sourceTree = "<group>"; };
+		7057AC75219123D6002FAB4B /* RSSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSModel.m; sourceTree = "<group>"; };
+		7057AC7821912527002FAB4B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		7057AC7921912527002FAB4B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		7057AC7A21912527002FAB4B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		7057AC7B21912527002FAB4B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		7057AC7C21912527002FAB4B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		7057AC7D21912527002FAB4B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		7057AC7E21912527002FAB4B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		7057AC7F21912527002FAB4B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		7057AC8021912527002FAB4B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		7057AC8121912527002FAB4B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		7057AC8221912527002FAB4B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		7057AC8321912527002FAB4B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		7057AC8421912527002FAB4B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		7057AC8B21912CEF002FAB4B /* NSString+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		7057AC8C21912CEF002FAB4B /* NSString+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		7057AC8F21912DE1002FAB4B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		7057AC9021912DE1002FAB4B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		7057AC9121912DE1002FAB4B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		7057AC9221912DE1002FAB4B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		7057AC9321912DE1002FAB4B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		7057AC9421912DE1002FAB4B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		7057AC9521912DE1002FAB4B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		7057AC9621912DE1002FAB4B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		7057AC9721912DE1002FAB4B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		7057AC9821912DE1002FAB4B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		7057AC9921912DE1002FAB4B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		7057AC9A21912DE1002FAB4B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7057ACA221912E50002FAB4B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7057ACA42191303E002FAB4B /* RSSDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDao.h; sourceTree = "<group>"; };
+		7057ACA52191303E002FAB4B /* RSSDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDao.m; sourceTree = "<group>"; };
+		7057ACA821914116002FAB4B /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		7057ACA921914116002FAB4B /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		7057ACAB219152D3002FAB4B /* RSSDetailListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDetailListController.h; sourceTree = "<group>"; };
+		7057ACAC219152D3002FAB4B /* RSSDetailListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailListController.m; sourceTree = "<group>"; };
+		7057ACB0219167FD002FAB4B /* RSSDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDetailController.h; sourceTree = "<group>"; };
+		7057ACB1219167FD002FAB4B /* RSSDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7057AC4621912179002FAB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057ACA321912E50002FAB4B /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057AC5E2191217B002FAB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7057AC4021912179002FAB4B = {
+			isa = PBXGroup;
+			children = (
+				7057AC4B21912179002FAB4B /* MyRSS */,
+				7057AC642191217B002FAB4B /* MyRSSTests */,
+				7057AC4A21912179002FAB4B /* Products */,
+				7057ACA121912E4F002FAB4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7057AC4A21912179002FAB4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7057AC4921912179002FAB4B /* MyRSS.app */,
+				7057AC612191217B002FAB4B /* MyRSSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7057AC4B21912179002FAB4B /* MyRSS */ = {
+			isa = PBXGroup;
+			children = (
+				7057ACA721914106002FAB4B /* GDataXml */,
+				7057AC8E21912DE1002FAB4B /* fmdb */,
+				7057AC7721912527002FAB4B /* AFNetworking */,
+				7057AC70219123A6002FAB4B /* RSSTools */,
+				7057AC4C21912179002FAB4B /* AppDelegate.h */,
+				7057AC4D21912179002FAB4B /* AppDelegate.m */,
+				7057AC4F21912179002FAB4B /* ViewController.h */,
+				7057AC5021912179002FAB4B /* ViewController.m */,
+				7057ACAB219152D3002FAB4B /* RSSDetailListController.h */,
+				7057ACAC219152D3002FAB4B /* RSSDetailListController.m */,
+				7057ACB0219167FD002FAB4B /* RSSDetailController.h */,
+				7057ACB1219167FD002FAB4B /* RSSDetailController.m */,
+				7057AC5221912179002FAB4B /* Main.storyboard */,
+				7057AC552191217B002FAB4B /* Assets.xcassets */,
+				7057AC572191217B002FAB4B /* LaunchScreen.storyboard */,
+				7057AC5A2191217B002FAB4B /* Info.plist */,
+				7057AC5B2191217B002FAB4B /* main.m */,
+			);
+			path = MyRSS;
+			sourceTree = "<group>";
+		};
+		7057AC642191217B002FAB4B /* MyRSSTests */ = {
+			isa = PBXGroup;
+			children = (
+				7057AC652191217B002FAB4B /* MyRSSTests.m */,
+				7057AC672191217B002FAB4B /* Info.plist */,
+			);
+			path = MyRSSTests;
+			sourceTree = "<group>";
+		};
+		7057AC70219123A6002FAB4B /* RSSTools */ = {
+			isa = PBXGroup;
+			children = (
+				7057AC71219123C9002FAB4B /* RSS.h */,
+				7057AC72219123C9002FAB4B /* RSS.m */,
+				7057AC74219123D6002FAB4B /* RSSModel.h */,
+				7057AC75219123D6002FAB4B /* RSSModel.m */,
+				7057AC8B21912CEF002FAB4B /* NSString+Tools.h */,
+				7057AC8C21912CEF002FAB4B /* NSString+Tools.m */,
+				7057ACA42191303E002FAB4B /* RSSDao.h */,
+				7057ACA52191303E002FAB4B /* RSSDao.m */,
+			);
+			path = RSSTools;
+			sourceTree = "<group>";
+		};
+		7057AC7721912527002FAB4B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				7057AC8421912527002FAB4B /* AFHTTPSessionManager.h */,
+				7057AC7D21912527002FAB4B /* AFHTTPSessionManager.m */,
+				7057AC8121912527002FAB4B /* AFNetworking.h */,
+				7057AC7921912527002FAB4B /* AFNetworkReachabilityManager.h */,
+				7057AC8221912527002FAB4B /* AFNetworkReachabilityManager.m */,
+				7057AC7821912527002FAB4B /* AFSecurityPolicy.h */,
+				7057AC8321912527002FAB4B /* AFSecurityPolicy.m */,
+				7057AC7B21912527002FAB4B /* AFURLRequestSerialization.h */,
+				7057AC8021912527002FAB4B /* AFURLRequestSerialization.m */,
+				7057AC7E21912527002FAB4B /* AFURLResponseSerialization.h */,
+				7057AC7C21912527002FAB4B /* AFURLResponseSerialization.m */,
+				7057AC7A21912527002FAB4B /* AFURLSessionManager.h */,
+				7057AC7F21912527002FAB4B /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		7057AC8E21912DE1002FAB4B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				7057AC8F21912DE1002FAB4B /* FMDatabase.h */,
+				7057AC9021912DE1002FAB4B /* FMDatabaseQueue.m */,
+				7057AC9121912DE1002FAB4B /* FMResultSet.h */,
+				7057AC9221912DE1002FAB4B /* FMDatabasePool.h */,
+				7057AC9321912DE1002FAB4B /* FMDatabaseAdditions.m */,
+				7057AC9421912DE1002FAB4B /* FMDatabase.m */,
+				7057AC9521912DE1002FAB4B /* FMDatabaseQueue.h */,
+				7057AC9621912DE1002FAB4B /* FMDB.h */,
+				7057AC9721912DE1002FAB4B /* FMDatabaseAdditions.h */,
+				7057AC9821912DE1002FAB4B /* FMDatabasePool.m */,
+				7057AC9921912DE1002FAB4B /* FMResultSet.m */,
+				7057AC9A21912DE1002FAB4B /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		7057ACA121912E4F002FAB4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7057ACA221912E50002FAB4B /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7057ACA721914106002FAB4B /* GDataXml */ = {
+			isa = PBXGroup;
+			children = (
+				7057ACA921914116002FAB4B /* GDataXMLNode.h */,
+				7057ACA821914116002FAB4B /* GDataXMLNode.m */,
+			);
+			path = GDataXml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7057AC4821912179002FAB4B /* MyRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7057AC6A2191217B002FAB4B /* Build configuration list for PBXNativeTarget "MyRSS" */;
+			buildPhases = (
+				7057AC4521912179002FAB4B /* Sources */,
+				7057AC4621912179002FAB4B /* Frameworks */,
+				7057AC4721912179002FAB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyRSS;
+			productName = MyRSS;
+			productReference = 7057AC4921912179002FAB4B /* MyRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7057AC602191217B002FAB4B /* MyRSSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7057AC6D2191217B002FAB4B /* Build configuration list for PBXNativeTarget "MyRSSTests" */;
+			buildPhases = (
+				7057AC5D2191217B002FAB4B /* Sources */,
+				7057AC5E2191217B002FAB4B /* Frameworks */,
+				7057AC5F2191217B002FAB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7057AC632191217B002FAB4B /* PBXTargetDependency */,
+			);
+			name = MyRSSTests;
+			productName = MyRSSTests;
+			productReference = 7057AC612191217B002FAB4B /* MyRSSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7057AC4121912179002FAB4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = x.wang;
+				TargetAttributes = {
+					7057AC4821912179002FAB4B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					7057AC602191217B002FAB4B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7057AC4821912179002FAB4B;
+					};
+				};
+			};
+			buildConfigurationList = 7057AC4421912179002FAB4B /* Build configuration list for PBXProject "MyRSS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7057AC4021912179002FAB4B;
+			productRefGroup = 7057AC4A21912179002FAB4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7057AC4821912179002FAB4B /* MyRSS */,
+				7057AC602191217B002FAB4B /* MyRSSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7057AC4721912179002FAB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057ACAF21915F81002FAB4B /* Info.plist in Resources */,
+				7057AC592191217B002FAB4B /* LaunchScreen.storyboard in Resources */,
+				7057AC562191217B002FAB4B /* Assets.xcassets in Resources */,
+				7057AC5421912179002FAB4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057AC5F2191217B002FAB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7057AC4521912179002FAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057AC8821912527002FAB4B /* AFURLRequestSerialization.m in Sources */,
+				7057AC73219123C9002FAB4B /* RSS.m in Sources */,
+				7057AC8921912527002FAB4B /* AFNetworkReachabilityManager.m in Sources */,
+				7057ACAA21914116002FAB4B /* GDataXMLNode.m in Sources */,
+				7057ACA62191303E002FAB4B /* RSSDao.m in Sources */,
+				7057AC9D21912DE1002FAB4B /* FMDatabase.m in Sources */,
+				7057AC8721912527002FAB4B /* AFURLSessionManager.m in Sources */,
+				7057AC9B21912DE1002FAB4B /* FMDatabaseQueue.m in Sources */,
+				7057AC9C21912DE1002FAB4B /* FMDatabaseAdditions.m in Sources */,
+				7057AC5121912179002FAB4B /* ViewController.m in Sources */,
+				7057AC5C2191217B002FAB4B /* main.m in Sources */,
+				7057AC4E21912179002FAB4B /* AppDelegate.m in Sources */,
+				7057AC8D21912CEF002FAB4B /* NSString+Tools.m in Sources */,
+				7057AC8521912527002FAB4B /* AFURLResponseSerialization.m in Sources */,
+				7057AC8621912527002FAB4B /* AFHTTPSessionManager.m in Sources */,
+				7057ACB2219167FD002FAB4B /* RSSDetailController.m in Sources */,
+				7057AC9F21912DE1002FAB4B /* FMResultSet.m in Sources */,
+				7057AC9E21912DE1002FAB4B /* FMDatabasePool.m in Sources */,
+				7057AC8A21912527002FAB4B /* AFSecurityPolicy.m in Sources */,
+				7057AC76219123D6002FAB4B /* RSSModel.m in Sources */,
+				7057ACAD219152D3002FAB4B /* RSSDetailListController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7057AC5D2191217B002FAB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7057AC662191217B002FAB4B /* MyRSSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7057AC632191217B002FAB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7057AC4821912179002FAB4B /* MyRSS */;
+			targetProxy = 7057AC622191217B002FAB4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7057AC5221912179002FAB4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7057AC5321912179002FAB4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7057AC572191217B002FAB4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7057AC582191217B002FAB4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7057AC682191217B002FAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7057AC692191217B002FAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7057AC6B2191217B002FAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5H38JVK5NX;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = MyRSS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinzhi365.MyRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = test;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7057AC6C2191217B002FAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5H38JVK5NX;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = MyRSS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinzhi365.MyRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = test;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7057AC6E2191217B002FAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyRSSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = x.wang.MyRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRSS.app/MyRSS";
+			};
+			name = Debug;
+		};
+		7057AC6F2191217B002FAB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyRSSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = x.wang.MyRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyRSS.app/MyRSS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7057AC4421912179002FAB4B /* Build configuration list for PBXProject "MyRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057AC682191217B002FAB4B /* Debug */,
+				7057AC692191217B002FAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7057AC6A2191217B002FAB4B /* Build configuration list for PBXNativeTarget "MyRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057AC6B2191217B002FAB4B /* Debug */,
+				7057AC6C2191217B002FAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7057AC6D2191217B002FAB4B /* Build configuration list for PBXNativeTarget "MyRSSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7057AC6E2191217B002FAB4B /* Debug */,
+				7057AC6F2191217B002FAB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7057AC4121912179002FAB4B /* Project object */;
+}
