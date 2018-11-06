@@ -34,8 +34,9 @@
         [_tableView reloadData];
     }
     
+    __weak typeof(self) weakSelf = self;
     [RSS refreshRSSData:_rss handler:^{
-        [_tableView reloadData];
+        [weakSelf.tableView reloadData];
     }];
 }
 

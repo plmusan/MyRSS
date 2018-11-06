@@ -32,7 +32,6 @@
 		7057ACA62191303E002FAB4B /* RSSDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACA52191303E002FAB4B /* RSSDao.m */; };
 		7057ACAA21914116002FAB4B /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACA821914116002FAB4B /* GDataXMLNode.m */; };
 		7057ACAD219152D3002FAB4B /* RSSDetailListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACAC219152D3002FAB4B /* RSSDetailListController.m */; };
-		7057ACAF21915F81002FAB4B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC5A2191217B002FAB4B /* Info.plist */; };
 		7057ACB2219167FD002FAB4B /* RSSDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACB1219167FD002FAB4B /* RSSDetailController.m */; };
 		7057ACB5219183DE002FAB4B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACB3219183DE002FAB4B /* LoginController.m */; };
 /* End PBXBuildFile section */
@@ -329,7 +328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7057ACAF21915F81002FAB4B /* Info.plist in Resources */,
 				7057AC592191217B002FAB4B /* LaunchScreen.storyboard in Resources */,
 				7057AC562191217B002FAB4B /* Assets.xcassets in Resources */,
 				7057AC5421912179002FAB4B /* Main.storyboard in Resources */,

@@ -34,6 +34,8 @@
     UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
     if ([nav.topViewController.presentedViewController isKindOfClass:[LoginController class]]) {
         return;
+    } else if (nav.topViewController.presentedViewController) {
+        [nav.topViewController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
     }
     LoginController *vc = [[LoginController alloc] init];
     [self.window.rootViewController presentViewController:vc animated:YES completion:nil];

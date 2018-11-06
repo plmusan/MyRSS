@@ -115,14 +115,14 @@
     }
     
     //1.开启事务
-    BOOL b = [_db beginTransaction];
+    [_db beginTransaction];
     BOOL success = NO;
     @try {
         //2.在事务中执行任务
-        BOOL b = [_db executeUpdate:@"insert into t_rss(ID, title, description, lastBuildDate, link) values(:ID, :title, :description, :lastBuildDate, :link)" withParameterDictionary:@{@"ID": model.ID ?: @"",                                                                     @"title": model.title ?: @"", @"description": model.descriptionStr ?: @"", @"lastBuildDate": model.lastBuildDate ?: @"", @"link": model.link ?: @""}];
+        [_db executeUpdate:@"insert into t_rss(ID, title, description, lastBuildDate, link) values(:ID, :title, :description, :lastBuildDate, :link)" withParameterDictionary:@{@"ID": model.ID ?: @"",                                                                     @"title": model.title ?: @"", @"description": model.descriptionStr ?: @"", @"lastBuildDate": model.lastBuildDate ?: @"", @"link": model.link ?: @""}];
         __weak typeof(self) weakSelf = self;
         for (RSSItem * _Nonnull obj in model.item) {
-            BOOL a = [weakSelf.db executeUpdate:@"insert into t_item(rss_id, title, description, lastBuildDate, link) values(:rss_id, :title, :description, :lastBuildDate, :link)" withParameterDictionary:@{@"rss_id": obj.rss_id ?: @"", @"title": obj.title ?: @"", @"description": obj.descriptionStr ?: @"", @"lastBuildDate": obj.lastBuildDate ?: @"", @"link": obj.link ?: @""}];
+            [weakSelf.db executeUpdate:@"insert into t_item(rss_id, title, description, lastBuildDate, link) values(:rss_id, :title, :description, :lastBuildDate, :link)" withParameterDictionary:@{@"rss_id": obj.rss_id ?: @"", @"title": obj.title ?: @"", @"description": obj.descriptionStr ?: @"", @"lastBuildDate": obj.lastBuildDate ?: @"", @"link": obj.link ?: @""}];
         }
     }
     @catch(NSException *exception) {
