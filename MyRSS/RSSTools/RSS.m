@@ -139,4 +139,9 @@
     return [RSSDao deleteRSS:mod];
 }
 
++ (BOOL)removeAllRSS {
+    return [RSSDao deleteAllRSS];
+}
+
+
 @end

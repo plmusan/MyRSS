@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "RSSDetailListController.h"
+#import "LoginController.h"
 #import "RSS.h"
 #import "RSSModel.h"
 #import "RSSDao.h"
@@ -29,6 +30,8 @@
     if (arr) {
         [_datasource addObjectsFromArray:arr];
     }
+    LoginController *vc = [[LoginController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

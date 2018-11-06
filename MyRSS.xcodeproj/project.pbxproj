@@ -34,6 +34,7 @@
 		7057ACAD219152D3002FAB4B /* RSSDetailListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACAC219152D3002FAB4B /* RSSDetailListController.m */; };
 		7057ACAF21915F81002FAB4B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7057AC5A2191217B002FAB4B /* Info.plist */; };
 		7057ACB2219167FD002FAB4B /* RSSDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACB1219167FD002FAB4B /* RSSDetailController.m */; };
+		7057ACB5219183DE002FAB4B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7057ACB3219183DE002FAB4B /* LoginController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		7057ACAC219152D3002FAB4B /* RSSDetailListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailListController.m; sourceTree = "<group>"; };
 		7057ACB0219167FD002FAB4B /* RSSDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSDetailController.h; sourceTree = "<group>"; };
 		7057ACB1219167FD002FAB4B /* RSSDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSDetailController.m; sourceTree = "<group>"; };
+		7057ACB3219183DE002FAB4B /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		7057ACB4219183DE002FAB4B /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				7057AC70219123A6002FAB4B /* RSSTools */,
 				7057AC4C21912179002FAB4B /* AppDelegate.h */,
 				7057AC4D21912179002FAB4B /* AppDelegate.m */,
+				7057ACB4219183DE002FAB4B /* LoginController.h */,
+				7057ACB3219183DE002FAB4B /* LoginController.m */,
 				7057AC4F21912179002FAB4B /* ViewController.h */,
 				7057AC5021912179002FAB4B /* ViewController.m */,
 				7057ACAB219152D3002FAB4B /* RSSDetailListController.h */,
@@ -346,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7057AC8821912527002FAB4B /* AFURLRequestSerialization.m in Sources */,
+				7057ACB5219183DE002FAB4B /* LoginController.m in Sources */,
 				7057AC73219123C9002FAB4B /* RSS.m in Sources */,
 				7057AC8921912527002FAB4B /* AFNetworkReachabilityManager.m in Sources */,
 				7057ACAA21914116002FAB4B /* GDataXMLNode.m in Sources */,

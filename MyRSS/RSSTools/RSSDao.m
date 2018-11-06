@@ -165,6 +165,33 @@
     return success;
 }
 
+- (BOOL)deleteAllRSS {
+    if (![_db open]) {
+        NSLog(@"db create failure");
+        return NO;
+    }
+    
+    //1.开启事务
+    [_db beginTransaction];
+    BOOL success = NO;
+    @try {
+        //2.在事务中执行任务
+        [_db executeUpdate:@"delete from 't_item' where 1=1"];
+        [_db executeUpdate:@"delete from 't_item' where 1=1"];
+    }
+    @catch(NSException *exception) {
+        //3.在事务中执行任务失败，退回开启事务之前的状态
+        [_db rollback];
+    }
+    @finally {
+        //4. 在事务中执行任务成功之后
+        success = YES;
+        [_db commit];
+    }
+    [_db close];
+    return success;
+}
+
 + (NSArray<RSSModel *> *)RSSList {
     return [[RSSDao shareInstance] RSSList];
 }
@@ -176,6 +203,10 @@
 }
 + (BOOL)deleteRSS:(RSSModel *)model {
     return [[RSSDao shareInstance] deleteRSS:model];
+}
+
++ (BOOL)deleteAllRSS {
+    return [[RSSDao shareInstance] deleteAllRSS];
 }
 
 @end

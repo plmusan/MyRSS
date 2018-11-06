@@ -17,4 +17,6 @@
 + (BOOL)insertRSS:(RSSModel *)model;
 + (BOOL)deleteRSS:(RSSModel *)model;
 
++ (BOOL)deleteAllRSS;
+
 @end

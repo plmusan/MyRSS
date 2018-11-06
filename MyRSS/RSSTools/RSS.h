@@ -21,4 +21,6 @@
 
 + (BOOL)removeRSS:(RSSModel *)mod;
 
++ (BOOL)removeAllRSS;
+
 @end
