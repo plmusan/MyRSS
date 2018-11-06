@@ -30,8 +30,8 @@
     if (arr) {
         [_datasource addObjectsFromArray:arr];
     }
-    LoginController *vc = [[LoginController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+//    LoginController *vc = [[LoginController alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

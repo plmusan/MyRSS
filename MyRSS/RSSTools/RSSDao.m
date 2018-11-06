@@ -131,8 +131,7 @@
     }
     @finally {
         //4. 在事务中执行任务成功之后
-        success = YES;
-        [_db commit];
+        success = [_db commit];
     }
     [_db close];
     return success;
@@ -150,7 +149,7 @@
     @try {
         //2.在事务中执行任务
         [_db executeUpdate:@"delete from 't_item' where rss_id = ?" withArgumentsInArray:@[model.ID]];
-        [_db executeUpdate:@"delete from 't_item' where ID = ?" withArgumentsInArray:@[model.ID]];
+        [_db executeUpdate:@"delete from 't_rss' where ID = ?" withArgumentsInArray:@[model.ID]];
     }
     @catch(NSException *exception) {
         //3.在事务中执行任务失败，退回开启事务之前的状态
@@ -158,8 +157,7 @@
     }
     @finally {
         //4. 在事务中执行任务成功之后
-        success = YES;
-        [_db commit];
+        success = [_db commit];
     }
     [_db close];
     return success;
@@ -185,8 +183,7 @@
     }
     @finally {
         //4. 在事务中执行任务成功之后
-        success = YES;
-        [_db commit];
+        success = [_db commit];
     }
     [_db close];
     return success;
