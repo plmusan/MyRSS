@@ -31,14 +31,14 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-//    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
-//    if ([nav.topViewController.presentedViewController isKindOfClass:[LoginController class]]) {
-//        return;
-//    } else if (nav.topViewController.presentedViewController) {
-//        [nav.topViewController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
-//    }
-//    LoginController *vc = [[LoginController alloc] init];
-//    [self.window.rootViewController presentViewController:vc animated:YES completion:nil];
+    UINavigationController *nav = (UINavigationController *)self.window.rootViewController;
+    if ([nav.topViewController.presentedViewController isKindOfClass:[LoginController class]]) {
+        return;
+    } else if (nav.topViewController.presentedViewController) {
+        [nav.topViewController.presentedViewController dismissViewControllerAnimated:NO completion:nil];
+    }
+    LoginController *vc = [[LoginController alloc] init];
+    [self.window.rootViewController presentViewController:vc animated:YES completion:nil];
 }
 
 

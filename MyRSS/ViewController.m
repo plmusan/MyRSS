@@ -30,8 +30,8 @@
     if (arr) {
         [_datasource addObjectsFromArray:arr];
     }
-//    LoginController *vc = [[LoginController alloc] init];
-//    [self presentViewController:vc animated:YES completion:nil];
+    LoginController *vc = [[LoginController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -74,14 +74,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"Cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.font = [UIFont systemFontOfSize:17];
     }
     RSSModel *rss = _datasource[indexPath.row];
     cell.textLabel.text = rss.title;
-    cell.detailTextLabel.text = rss.lastBuildDate;
+    if (rss.lastBuildDate.length > 26) {
+        cell.detailTextLabel.text = [rss.lastBuildDate substringToIndex:26];
+    } else {
+        cell.detailTextLabel.text = rss.lastBuildDate;
+    }
+    
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

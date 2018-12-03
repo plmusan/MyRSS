@@ -56,10 +56,10 @@
     }
     
     NSString *sql_rss = @"create table if not exists t_rss ('ID' TEXT PRIMARY KEY,'title' TEXT, 'description' TEXT,'lastBuildDate' TEXT, 'link' TEXT)";
-    BOOL b = [_db executeUpdate:sql_rss];
+    [_db executeUpdate:sql_rss];
     
     NSString *sql_rss_item = @"create table if not exists t_item ('ID' INTEGER PRIMARY KEY AUTOINCREMENT, 'rss_id' TEXT, 'title' TEXT, 'description' TEXT,'lastBuildDate' TEXT, 'link' TEXT)";
-    b = [_db executeUpdate:sql_rss_item];
+    [_db executeUpdate:sql_rss_item];
     
     [_db close];
 }
